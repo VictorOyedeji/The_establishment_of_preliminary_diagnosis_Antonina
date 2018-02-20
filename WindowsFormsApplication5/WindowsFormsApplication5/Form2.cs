@@ -46,6 +46,42 @@ namespace WindowsFormsApplication5
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Dictionary<int, string> privData = new Dictionary<int, string>();
+            //privData.Add(1, D.FIO);
+            //privData.Add(2, D.sex);
+            //privData.Add(3, D.age);
+            //privData.Add(4, D.experience);
+            //privData.Add(5, D.company);
+            //privData.Add(6, D.department);
+            //privData.Add(7, D.profession);
+            //privData.Add(0, D.factors);
+            //string[] privData = new string[8] { D.FIO, D.sex, D.age, D.experience,
+            //    D.company, D.department, D.profession, D.factors};
+
+            //string[] marks = new string[8] { "FIO", "sex", "age", "experience" ,
+            //"company", "department", "profession", "factors"};
+            //marks[1] = "FIO";
+            //marks[2] = "sex";
+            //marks[3] = "age";
+            //marks[4] = "experience";
+            //marks[5] = "company";
+            //marks[6] = "department";
+            //marks[7] = "profession";
+            //marks[0] = "factors";
+
+            poisk();
+
+            
+        }
+
+        private void poisk()
+        {
+            string[] marks = new string[8] { "FIO", "sex", "age", "experience" ,
+            "company", "department", "profession", "factors"};
+            string[] privData = new string[8] { D.FIO, D.sex, D.age, D.experience,
+                D.company, D.department, D.profession, D.factors};
+
+
             Microsoft.Office.Interop.Word.Application application;
             Microsoft.Office.Interop.Word.Document document;
 
@@ -54,55 +90,64 @@ namespace WindowsFormsApplication5
             Object falseObj = false;
 
             application = new Microsoft.Office.Interop.Word.Application();
-            Object pathObj = "извещение 1";
+            string exeDir = 
+                System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            Object pathObj = System.IO.Path.Combine(exeDir,"извещение 1");
 
             try
             {
-                document = application.Documents.Add(ref pathObj, ref missingObj, 
+                document = application.Documents.Add(ref pathObj, ref missingObj,
                     ref missingObj, true);
             }
             catch (Exception error)
             {
-                document.Close(ref falseObj, ref missingObj, ref missingObj);
+                //document.Close(ref falseObj, ref missingObj, ref missingObj);
                 application.Quit(ref falseObj, ref missingObj, ref missingObj);
                 document = null;
                 application = null;
                 throw error;
             }
-            application.Visible = true;
+            application.Visible = true;            
 
             // обьектные строки для Word
-            object strToFind = null;
-            object strToFindObj = strToFind;
-            object replaceStr = null;
-            object replaceStrObj = replaceStr;
+            //object strToFind = null;
+            //object replaceStr = null;
+
+            object strToFindObj;// = strToFind;            
+            object replaceStrObj; //= replaceStr;
             // диапазон документа Word
             Microsoft.Office.Interop.Word.Range wordRange;
             //тип поиска и замены
             object replaceTypeObj;
             replaceTypeObj = WdReplace.wdReplaceAll;
-            // обходим все разделы документа
-            for (int i = 1; i <= document.Sections.Count; i++)
+
+            //object bookmarkNameObj = "department";
+
+            //заменяем по очереди нужные слова
+            for (int j=0; j<8; j++)
             {
-                // берем всю секцию диапазоном
-                wordRange = document.Sections[i].Range;
+                strToFindObj = marks[j];
+                replaceStrObj = privData[j];
 
-                /*
-                Обходим редкий глюк в Find, ПРИЗНАННЫЙ MICROSOFT, метод Execute на некоторых машинах вылетает с ошибкой "Заглушке переданы неправильные данные / Stub received bad data"  Подробности: http://support.microsoft.com/default.aspx?scid=kb;en-us;313104
-                // выполняем метод поиска и  замены обьекта диапазона ворд
-                wordRange.Find.Execute(ref strToFindObj, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing, ref replaceStrObj, ref replaceTypeObj, ref wordMissing, ref wordMissing, ref wordMissing, ref wordMissing);
-                */
+                // обходим все разделы документа
+                for (int i = 1; i <= document.Sections.Count; i++)
+                {
+                    // берем всю секцию диапазоном
+                    wordRange = document.Sections[i].Range;                    
 
-                Microsoft.Office.Interop.Word.Find wordFindObj = wordRange.Find;
-                object[] wordFindParameters = new object[15] 
-                { strToFindObj, missingObj, missingObj, missingObj, missingObj, missingObj,
+                    Microsoft.Office.Interop.Word.Find wordFindObj = wordRange.Find;                    
+
+                    object[] wordFindParameters = new object[15]
+                    { strToFindObj, missingObj, missingObj, missingObj, missingObj, missingObj,
                     missingObj, missingObj, missingObj, replaceStrObj, replaceTypeObj, missingObj,
                     missingObj, missingObj, missingObj };
 
-                wordFindObj.GetType().InvokeMember("Execute", BindingFlags.InvokeMethod, null, wordFindObj, wordFindParameters);
+                    wordFindObj.GetType().InvokeMember("Execute", BindingFlags.InvokeMethod, 
+                        null, wordFindObj, wordFindParameters);
+                }
             }
-
-
+            
+            
         }
     }
 }

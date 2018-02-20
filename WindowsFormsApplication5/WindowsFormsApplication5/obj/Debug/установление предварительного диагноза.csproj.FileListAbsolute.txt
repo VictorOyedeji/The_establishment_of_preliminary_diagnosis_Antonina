@@ -10,3 +10,4 @@ c:\users\илья\documents\visual studio 2015\Projects\WindowsFormsApplication5
 c:\users\илья\documents\visual studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form3.resources
 C:\Users\Илья\Documents\Visual Studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\установление предварительного диагноза.csprojResolveAssemblyReference.cache
 C:\Users\Илья\Documents\Visual Studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form4.resources
+C:\Users\Илья\Documents\Visual Studio 2015\Projects\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\установление предварительного диагноза.csproj.ResolveComReference.cache

@@ -184,12 +184,12 @@ namespace WindowsFormsApplication5
         {
             D.FIO = textBox1.Text.ToString();
             D.sex = comboBox1.SelectedItem.ToString();
-            D.age = textBox2.ToString();
-            D.experience = textBox3.ToString();
-            D.company = textBox4.ToString();
-            D.department = textBox5.ToString();
-            D.profession = textBox6.ToString();
-            D.factors = textBox7.ToString();
+            D.age = textBox2.Text.ToString();
+            D.experience = textBox3.Text.ToString();
+            D.company = textBox4.Text.ToString();
+            D.department = textBox5.Text.ToString();
+            D.profession = textBox6.Text.ToString();
+            D.factors = textBox7.Text.ToString();
         }
 
     }
