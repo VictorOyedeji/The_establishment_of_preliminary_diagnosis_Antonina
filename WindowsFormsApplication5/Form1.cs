@@ -79,25 +79,16 @@ namespace WindowsFormsApplication5
 
             //проверка у
             bool UCondition = false;
-            if (checkBox18.Checked)
-            {
-                UCondition = true;
-                //comment += System.Environment.NewLine + comment4;
-            }
+            if (checkBox18.Checked) UCondition = true;
             //проверка ф
             bool FCondition = false;
-            if (checkBox19.Checked)
-            {
-                FCondition = true;
-                //comment += System.Environment.NewLine + comment5;
-            }
+            if (checkBox19.Checked) FCondition = true;
 
             //Только а-е (в сочетании с у и/или ф или без него)
             bool firstCondition = false;
             int withoutOtherExcept_a_e = 0; // для проверки ненужных галочек
             bool a_e_f_u = false;   // как минимум а-е в сочетании с у и/или ф или без него
             int aefu = 0;
-
             // проверка ненужных галочек
             for (int q = 1; q <= 9; q++)
             {                
@@ -124,24 +115,22 @@ namespace WindowsFormsApplication5
                 if (aefu > 0) a_e_f_u = true;
             }
 
-            //при отсутствии ненужных галочек и а-е и мб ф,у
+            //а-е и мб ф,у при отсутствии ненужных галочек
             if (a_e_f_u == true && withoutOtherExcept_a_e > 0)
-            {
                 firstCondition = true;
-                comment += System.Environment.NewLine + comment1;
-            }             
+                //comment += System.Environment.NewLine + comment1;        
                 
 
             //Только ж-л (более 1 пункта) либо ж-л (более 1 пункта) 
             //в сочетании с а-е (в сочетании с у и/или ф или без него)
             bool secondCondition = false;
-            int punkt = 0;
+            int jl = 0;
             for (int i = 1; i <= 5; i++)
             {
                 if (cBs[i].Checked || (cBs[i].Checked && cBs[i + 9].Checked &&
-                    cBs[15].Checked)) punkt++;
+                    cBs[15].Checked)) jl++;
             }
-            if (punkt > 1 || (a_e_f_u == true && punkt > 1))
+            if (jl > 1 || (a_e_f_u == true && jl > 1))
             {
                 comment += System.Environment.NewLine + comment2;
                 secondCondition = true;
@@ -150,38 +139,45 @@ namespace WindowsFormsApplication5
             //Ж-л в сочетании м-т (независимо от наличия или отсутствия а-е, 
             //в сочетании с у и/или ф или без него) 
             bool thirdCondition = false;
-            bool w = false;
-            if (cBs[16].Checked || cBs[17].Checked) w = true;
-
-            for (int i = 1; i <= 9; i++)
+            int mt = 0;
+            for (int i = 6; i <= 9; i++)
             {
-                if (cBs[i].Checked || w && cBs[i].Checked) thirdCondition = true;
-            }
-            if (thirdCondition) comment += System.Environment.NewLine + comment3;
-
-            if (UCondition) comment += System.Environment.NewLine + comment4;
-            if (FCondition) comment += System.Environment.NewLine + comment5;
+                if (cBs[i].Checked || cBs[16].Checked || cBs[17].Checked) mt++;
+                if (mt > 0 && jl > 0) thirdCondition = true;
+                //if (w > 0) thirdCondition = true;
+            }            
+                        
 
             //Только м-т (в сочетании с у и/или ф или без него)
             bool sixthCondition = false;
-            for (int i = 6; i <= 9; i++)
+            if (mt > 0)
             {
-                if (cBs[i].Checked && w || cBs[i].Checked)
+                for (int i = 1; i <= 5; i++)
                 {
-                    for (int k = 1; k < 6; k++)
-                    {
-                        if (cBs[k].Checked == false && cBs[k + 9].Checked == false)
-                            sixthCondition = true;
-                    }
+                    if (cBs[i].Checked == false && cBs[i + 9].Checked == false &&
+                        cBs[15].Checked == false) sixthCondition = true;
                 }
             }
-            if (sixthCondition) comment += System.Environment.NewLine + comment6;
 
-            if (checkBox19.Checked == false) comment += System.Environment.NewLine +
-                    System.Environment.NewLine + commentNotF;                    
+            //вывод комментариев
+            if (firstCondition) komment(comment1);
+            if (secondCondition) komment(comment2);
+            if (thirdCondition) komment(comment3);
+            if (UCondition) komment(comment4);
+            if (FCondition) komment(comment5);
+            if (sixthCondition) komment(comment6);
+            if (FCondition == false) komment(System.Environment.NewLine + commentNotF);
 
-            textBox8.Text = comment;
-            if (textBox8.Text != "") button2.Enabled = true;
+            //if (firstCondition) comment += comment1;
+            //if (secondCondition) comment += comment2;
+            //if (thirdCondition) comment += comment3;
+            //if (UCondition) comment += comment4;
+            //if (FCondition) comment += comment5;
+            //if (sixthCondition) comment +=  comment6;
+            //if (FCondition == false) comment += System.Environment.NewLine + commentNotF;
+
+            //textBox8.Text = comment;
+            //if (textBox8.Text != "") button2.Enabled = true;
 
 
             //При сочетании комментариев 2 и 5 либо 3 и 5 – показать текст и форму извещения
@@ -194,6 +190,13 @@ namespace WindowsFormsApplication5
                 Form2.Show();
             }
 
+        }
+
+        private void komment( string s)
+        {
+            if (textBox8.Text != "") textBox8.Text += System.Environment.NewLine +
+                    System.Environment.NewLine + s;
+            else textBox8.Text = s;
         }
 
         private void button2_Click(object sender, EventArgs e)
