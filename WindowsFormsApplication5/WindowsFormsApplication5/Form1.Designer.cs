@@ -602,8 +602,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(525, 20);
             this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "указывается наименование предприятия, организации, учреждения, его ведомственная " +
-    "принадлежность";
             // 
             // tableLayoutPanel5
             // 
@@ -722,7 +720,11 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Жалобы";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

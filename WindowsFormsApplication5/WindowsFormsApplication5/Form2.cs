@@ -69,12 +69,12 @@ namespace WindowsFormsApplication5
             //marks[7] = "profession";
             //marks[0] = "factors";
 
-            poisk();
+            poisk("извещение 1");
 
             
         }
 
-        private void poisk()
+        public void poisk(string izvech)
         {
             string[] marks = new string[8] { "FIO", "sex", "age", "experience" ,
             "company", "department", "profession", "factors"};
@@ -92,7 +92,7 @@ namespace WindowsFormsApplication5
             application = new Microsoft.Office.Interop.Word.Application();
             string exeDir = 
                 System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            Object pathObj = System.IO.Path.Combine(exeDir,"извещение 1");
+            Object pathObj = System.IO.Path.Combine(exeDir, izvech);
 
             try
             {
@@ -112,8 +112,7 @@ namespace WindowsFormsApplication5
             // обьектные строки для Word
             //object strToFind = null;
             //object replaceStr = null;
-
-            object strToFindObj;// = strToFind;            
+            object strToFindObj; // = strToFind;            
             object replaceStrObj; //= replaceStr;
             // диапазон документа Word
             Microsoft.Office.Interop.Word.Range wordRange;
@@ -126,8 +125,16 @@ namespace WindowsFormsApplication5
             //заменяем по очереди нужные слова
             for (int j=0; j<8; j++)
             {
+
+                if (marks[j] == "FIO" || marks[j] == "company" ||
+                    marks[j] == "department" || marks[j] == "factors")
+                {
+                    int x = 66 - privData[j].Length;
+                    for (int z = 1; z <= x; z++) privData[j] += "_";
+                }
                 strToFindObj = marks[j];
                 replaceStrObj = privData[j];
+
 
                 // обходим все разделы документа
                 for (int i = 1; i <= document.Sections.Count; i++)

@@ -21,5 +21,16 @@ namespace WindowsFormsApplication5
         {
             this.Close();
         }
+
+        Form2 program = new Form2();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            program.poisk("извещение 2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

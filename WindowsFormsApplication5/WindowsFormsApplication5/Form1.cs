@@ -199,14 +199,14 @@ namespace WindowsFormsApplication5
 
         public void private_data()
         {
-            //D.FIO = textBox1.Text.ToString();
-            //D.sex = comboBox1.SelectedItem.ToString();
-            //D.age = textBox2.Text.ToString();
-            //D.experience = textBox3.Text.ToString();
-            //D.company = textBox4.Text.ToString();
-            //D.department = textBox5.Text.ToString();
-            //D.profession = textBox6.Text.ToString();
-            //D.factors = textBox7.Text.ToString();
+            D.FIO = textBox1.Text.ToString();
+            D.sex = comboBox1.SelectedItem.ToString();
+            D.age = textBox2.Text.ToString();
+            D.experience = textBox3.Text.ToString();
+            D.company = textBox4.Text.ToString();
+            D.department = textBox5.Text.ToString();
+            D.profession = textBox6.Text.ToString();
+            D.factors = textBox7.Text.ToString();
         }
 
     }
