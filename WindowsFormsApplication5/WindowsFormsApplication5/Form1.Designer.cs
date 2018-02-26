@@ -78,6 +78,7 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -118,40 +119,42 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Window;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox5, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox6, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox7, 0, 14);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox8, 0, 15);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox9, 0, 16);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 17);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 19);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox10, 0, 20);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox11, 0, 21);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox12, 0, 22);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox13, 0, 23);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox14, 0, 24);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox15, 0, 25);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox16, 0, 26);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 28);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox17, 0, 29);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 31);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox18, 0, 32);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 34);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox19, 0, 35);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 0, 12);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox5, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox6, 0, 14);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox7, 0, 15);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox8, 0, 16);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox9, 0, 17);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 18);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 20);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox10, 0, 21);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox11, 0, 22);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox12, 0, 23);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox13, 0, 24);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox14, 0, 25);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox15, 0, 26);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox16, 0, 27);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 29);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox17, 0, 30);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 32);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox18, 0, 33);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 35);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox19, 0, 36);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 37;
+            this.tableLayoutPanel1.RowCount = 38;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -189,7 +192,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(714, 476);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
@@ -197,7 +199,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 200);
+            this.label1.Location = new System.Drawing.Point(3, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(708, 33);
             this.label1.TabIndex = 0;
@@ -207,101 +209,102 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 236);
+            this.checkBox1.Location = new System.Drawing.Point(3, 269);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 17);
+            this.checkBox1.Size = new System.Drawing.Size(62, 17);
             this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "ж) удушье;";
+            this.checkBox1.Text = "удушье";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(3, 269);
+            this.checkBox2.Location = new System.Drawing.Point(3, 302);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(362, 17);
+            this.checkBox2.Size = new System.Drawing.Size(347, 17);
             this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "з) чувство заложенности в грудной клетке в сочетании с кашлем;";
+            this.checkBox2.Text = "чувство заложенности в грудной клетке в сочетании с кашлем";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 302);
+            this.checkBox3.Location = new System.Drawing.Point(3, 335);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(258, 17);
+            this.checkBox3.Size = new System.Drawing.Size(243, 17);
             this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "и) приступообразная экспираторная одышка;";
+            this.checkBox3.Text = "приступообразная экспираторная одышка";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(3, 335);
+            this.checkBox4.Location = new System.Drawing.Point(3, 368);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(520, 17);
+            this.checkBox4.Size = new System.Drawing.Size(505, 17);
             this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "к) распространенные сухие свистящие хрипы при выслушивании (аускультации) грудной" +
-    " клетки.";
+            this.checkBox4.Text = "распространенные сухие свистящие хрипы при выслушивании (аускультации) грудной кл" +
+    "етки";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(3, 368);
+            this.checkBox5.Location = new System.Drawing.Point(3, 401);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(689, 17);
+            this.checkBox5.Size = new System.Drawing.Size(676, 17);
             this.checkBox5.TabIndex = 5;
-            this.checkBox5.Text = "л) Снижение показателей пиковой скорости выдоха или объёма форсированного выдоха " +
-    "за 1 секунду (по данным мед.осмотров)";
+            this.checkBox5.Text = "снижение показателей пиковой скорости выдоха или объёма форсированного выдоха за " +
+    "1 секунду (по данным мед.осмотров)";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(3, 401);
+            this.checkBox6.Location = new System.Drawing.Point(3, 434);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(462, 17);
+            this.checkBox6.Size = new System.Drawing.Size(442, 17);
             this.checkBox6.TabIndex = 6;
-            this.checkBox6.Text = "н) Хронический продуктивный кашель при отсутствии свистящих хрипов или удушья; ";
+            this.checkBox6.Text = "хронический продуктивный кашель при отсутствии свистящих хрипов или удушья";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(3, 434);
+            this.checkBox7.Location = new System.Drawing.Point(3, 467);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(534, 17);
+            this.checkBox7.Size = new System.Drawing.Size(514, 17);
             this.checkBox7.TabIndex = 7;
-            this.checkBox7.Text = "о) Постоянные нормальные результаты обследования грудной клетки при наличии симпт" +
-    "оматики; ";
+            this.checkBox7.Text = "постоянные нормальные результаты обследования грудной клетки при наличии симптома" +
+    "тики";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(3, 467);
+            this.checkBox8.Location = new System.Drawing.Point(3, 500);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(439, 17);
+            this.checkBox8.Size = new System.Drawing.Size(501, 17);
             this.checkBox8.TabIndex = 8;
-            this.checkBox8.Text = "п) Возникновение симптомов исключительно на фоне простудных заболеваний; ";
+            this.checkBox8.Text = "возникновение респираторных симптомов исключительно на фоне простудных заболевани" +
+    "й";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(3, 500);
+            this.checkBox9.Location = new System.Drawing.Point(3, 533);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(592, 16);
+            this.checkBox9.Size = new System.Drawing.Size(581, 16);
             this.checkBox9.TabIndex = 9;
-            this.checkBox9.Text = "т) Нормальные показатели пиковой скорости выдоха или спирометрии при наличии клин" +
-    "ических проявлений  ";
+            this.checkBox9.Text = "Нормальные показатели пиковой скорости выдоха или спирометрии при наличии клиниче" +
+    "ских проявлений  ";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 519);
+            this.label2.Location = new System.Drawing.Point(3, 552);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 13);
             this.label2.TabIndex = 10;
@@ -311,7 +314,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 552);
+            this.label3.Location = new System.Drawing.Point(3, 585);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(708, 33);
             this.label3.TabIndex = 11;
@@ -321,80 +324,80 @@
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(3, 588);
+            this.checkBox10.Location = new System.Drawing.Point(3, 621);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(276, 17);
+            this.checkBox10.Size = new System.Drawing.Size(258, 17);
             this.checkBox10.TabIndex = 12;
-            this.checkBox10.Text = "а) водянистый насморк или заложенность носа; ";
+            this.checkBox10.Text = "водянистый насморк или заложенность носа";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(3, 621);
+            this.checkBox11.Location = new System.Drawing.Point(3, 654);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(241, 17);
+            this.checkBox11.Size = new System.Drawing.Size(223, 17);
             this.checkBox11.TabIndex = 13;
-            this.checkBox11.Text = "б) зуд и покраснение глаз, слезотечение; ";
+            this.checkBox11.Text = "зуд и покраснение глаз, слезотечение";
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(3, 654);
+            this.checkBox12.Location = new System.Drawing.Point(3, 687);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(292, 17);
+            this.checkBox12.Size = new System.Drawing.Size(274, 17);
             this.checkBox12.TabIndex = 14;
-            this.checkBox12.Text = "в) першение и саднение в горле, осиплость голоса; ";
+            this.checkBox12.Text = "першение и саднение в горле, осиплость голоса";
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox13
             // 
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(3, 687);
+            this.checkBox13.Location = new System.Drawing.Point(3, 720);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(599, 17);
+            this.checkBox13.Size = new System.Drawing.Size(582, 17);
             this.checkBox13.TabIndex = 15;
-            this.checkBox13.Text = "г) сухой радражающий кашель (чаще постоянный), не связанный с переохлаждением или" +
-    " вирусной инфекцией; ";
+            this.checkBox13.Text = "сухой радражающий кашель (чаще постоянный), не связанный с переохлаждением или ви" +
+    "русной инфекцией";
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(3, 720);
+            this.checkBox14.Location = new System.Drawing.Point(3, 753);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(271, 17);
+            this.checkBox14.Size = new System.Drawing.Size(253, 17);
             this.checkBox14.TabIndex = 16;
-            this.checkBox14.Text = "д) приступообразный кашель во время работы; ";
+            this.checkBox14.Text = "приступообразный кашель во время работы";
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(3, 753);
+            this.checkBox15.Location = new System.Drawing.Point(3, 786);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(502, 17);
+            this.checkBox15.Size = new System.Drawing.Size(484, 17);
             this.checkBox15.TabIndex = 17;
-            this.checkBox15.Text = "е) крапивница или другие проявления аллергических реакций со стороны кожных покро" +
-    "вов; ";
+            this.checkBox15.Text = "крапивница или другие проявления аллергических реакций со стороны кожных покровов" +
+    "";
             this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // checkBox16
             // 
             this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(3, 786);
+            this.checkBox16.Location = new System.Drawing.Point(3, 819);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(378, 17);
+            this.checkBox16.Size = new System.Drawing.Size(357, 17);
             this.checkBox16.TabIndex = 18;
-            this.checkBox16.Text = "м) Выраженные головокружения, потемнение в глазах, парестезии; ";
+            this.checkBox16.Text = "выраженные головокружения, потемнение в глазах, парестезии";
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 831);
+            this.label4.Location = new System.Drawing.Point(3, 864);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(708, 33);
             this.label4.TabIndex = 19;
@@ -404,18 +407,18 @@
             // checkBox17
             // 
             this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(3, 867);
+            this.checkBox17.Location = new System.Drawing.Point(3, 900);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(359, 17);
+            this.checkBox17.Size = new System.Drawing.Size(339, 17);
             this.checkBox17.TabIndex = 20;
-            this.checkBox17.Text = "р) Наличие существенной истории курения (более 20 пачек/лет); ";
+            this.checkBox17.Text = "наличие существенной истории курения (более 20 пачек/лет)";
             this.checkBox17.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 912);
+            this.label5.Location = new System.Drawing.Point(3, 945);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(708, 33);
             this.label5.TabIndex = 21;
@@ -425,33 +428,32 @@
             // checkBox18
             // 
             this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(3, 948);
+            this.checkBox18.Location = new System.Drawing.Point(3, 981);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(482, 17);
+            this.checkBox18.Size = new System.Drawing.Size(467, 17);
             this.checkBox18.TabIndex = 22;
-            this.checkBox18.Text = "у) Аллергическая конституция и/или наличие атопических заболеваний у родственнико" +
-    "в.";
+            this.checkBox18.Text = "аллергическая конституция и/или наличие атопических заболеваний у родственников";
             this.checkBox18.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 993);
+            this.label6.Location = new System.Drawing.Point(3, 1026);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(708, 33);
             this.label6.TabIndex = 23;
-            this.label6.Text = "ПРОФ. АНАМНЕЗ";
+            this.label6.Text = "ПРОФЕССИОНАЛЬНЫЙ АНАМНЕЗ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox19
             // 
             this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(3, 1029);
+            this.checkBox19.Location = new System.Drawing.Point(3, 1062);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(360, 17);
+            this.checkBox19.Size = new System.Drawing.Size(346, 17);
             this.checkBox19.TabIndex = 24;
-            this.checkBox19.Text = "ф) контакт с индукторами и триггерами астмы на рабочем месте";
+            this.checkBox19.Text = "контакт с индукторами и триггерами астмы на рабочем месте";
             this.checkBox19.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
@@ -470,7 +472,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label10, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox3, 5, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 33);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 66);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -545,7 +547,7 @@
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 36);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -578,7 +580,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.textBox4, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 63);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 96);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -606,12 +608,12 @@
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.49718F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.50282F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.07345F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.92655F));
             this.tableLayoutPanel5.Controls.Add(this.label12, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.textBox5, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 93);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 126);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -624,14 +626,14 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(217, 24);
+            this.label12.Size = new System.Drawing.Size(213, 24);
             this.label12.TabIndex = 0;
             this.label12.Text = "Наименование цеха, отделения, участка";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(226, 3);
+            this.textBox5.Location = new System.Drawing.Point(222, 3);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(464, 20);
             this.textBox5.TabIndex = 1;
@@ -639,12 +641,12 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.92655F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.07345F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.78531F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.21469F));
             this.tableLayoutPanel6.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.textBox6, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 123);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 156);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -677,7 +679,7 @@
             this.tableLayoutPanel7.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.textBox7, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 153);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 186);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -701,6 +703,17 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(481, 20);
             this.textBox7.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.Location = new System.Drawing.Point(3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(708, 33);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "ПЕРСОНАЛЬНЫЕ ДАННЫЕ";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox8
             // 
@@ -797,6 +810,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label15;
     }
 }
 

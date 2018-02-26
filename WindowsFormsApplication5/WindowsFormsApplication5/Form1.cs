@@ -13,10 +13,10 @@ namespace WindowsFormsApplication5
     public partial class Form1 : Form
     {
         //int tests_acsess = 0;
-        string comment1 = "Возможные предвестники бронхиальной астмы. Дать рекомендации по профилактике.";
-        string comment2 = "Работник имеет признаки респираторного неблагополучия. Подозрение на наличие диагноза \"бронхиальная астма\".";
+        string comment1 = "Возможные предвестники бронхиальной астмы или сопутствующие состояния при наличии бронхиальной астмы.";
+        string comment2 = "Работник имеет признаки респираторного неблагополучия. Диагноз \"бронхиальная астма\" вероятен.";
         string comment3 = "Работник имеет признаки респираторного неблагополучия. Диагноз \"бронхиальная астма\" возможен, но необходимо провести детальную дифференциальную диагностику.";
-        string comment4 = "Повышенный риск развития бронхиальной астмы. Дать рекомендации по профилактике.";
+        string comment4 = "Имеется повышенный риск развития бронхиальной астмы.";
         string comment5 = "При наличии бронхиальной астмы возможна связь заболевания с профессией.";
         string comment6 = "Работник не имеет значимых жалоб со стороны респираторного тракта. ";
         string commentNotF = "Установить связь заболевания с профессией невозможно ввиду отсутствия контакта с индукторами и триггерами астмы на рабочем месте";
@@ -31,7 +31,7 @@ namespace WindowsFormsApplication5
             textBox8.Text = null;
             private_data();
 
-            string comment = "";
+            //string comment = "";
 
             if (checkBox5.Checked && checkBox9.Checked ||
                 checkBox1.Checked && checkBox6.Checked ||
@@ -116,7 +116,7 @@ namespace WindowsFormsApplication5
             }
 
             //а-е и мб ф,у при отсутствии ненужных галочек
-            if (a_e_f_u == true && withoutOtherExcept_a_e > 0)
+            if (a_e_f_u == true && withoutOtherExcept_a_e == 9)
                 firstCondition = true;
                 //comment += System.Environment.NewLine + comment1;        
                 
@@ -129,12 +129,20 @@ namespace WindowsFormsApplication5
             {
                 if (cBs[i].Checked || (cBs[i].Checked && cBs[i + 9].Checked &&
                     cBs[15].Checked)) jl++;
-            }
-            if (jl > 1 || (a_e_f_u == true && jl > 1))
+            } 
+            for (int q=6; q<=9; q++)
             {
-                comment += System.Environment.NewLine + comment2;
-                secondCondition = true;
-            }
+                if (cBs[q].Checked == false && cBs[16].Checked == false &&
+                    cBs[17].Checked == false)
+                {
+                    if (jl > 1 || (a_e_f_u == true && jl > 1))
+                    {
+                        //comment += comment2;
+                        secondCondition = true;
+                    }
+                }
+            }           
+            
 
             //Ж-л в сочетании м-т (независимо от наличия или отсутствия а-е, 
             //в сочетании с у и/или ф или без него) 
@@ -163,12 +171,13 @@ namespace WindowsFormsApplication5
 
 
             //вывод комментариев
-            if (firstCondition) komment(comment1);
+            //bool dubl = false;
+            if (UCondition) komment(comment4);
+            if (firstCondition) komment(comment1);                                    
             if (secondCondition) komment(comment2);
             if (thirdCondition) komment(comment3);
-            if (UCondition) komment(comment4);
-            if (FCondition) komment(comment5);
             if (sixthCondition) komment(comment6);
+            if (FCondition) komment(comment5);            
             if (FCondition == false) komment(System.Environment.NewLine + commentNotF);
 
 
@@ -199,14 +208,14 @@ namespace WindowsFormsApplication5
 
         public void private_data()
         {
-            D.FIO = textBox1.Text.ToString();
-            D.sex = comboBox1.SelectedItem.ToString();
-            D.age = textBox2.Text.ToString();
-            D.experience = textBox3.Text.ToString();
-            D.company = textBox4.Text.ToString();
-            D.department = textBox5.Text.ToString();
-            D.profession = textBox6.Text.ToString();
-            D.factors = textBox7.Text.ToString();
+            //D.FIO = textBox1.Text.ToString();
+            //D.sex = comboBox1.SelectedItem.ToString();
+            //D.age = textBox2.Text.ToString();
+            //D.experience = textBox3.Text.ToString();
+            //D.company = textBox4.Text.ToString();
+            //D.department = textBox5.Text.ToString();
+            //D.profession = textBox6.Text.ToString();
+            //D.factors = textBox7.Text.ToString();
         }
 
     }
