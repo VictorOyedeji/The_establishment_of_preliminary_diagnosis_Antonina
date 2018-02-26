@@ -28,6 +28,24 @@ namespace WindowsFormsApplication5
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox4.Text == "" ||
+                textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "")
+            {
+                MessageBox.Show(
+                    "Поля \"Персональные данные\" не заполнены",
+                    "Внимание",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button1,
+                    MessageBoxOptions.DefaultDesktopOnly);
+            }
+            if (comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Пол не выбран");
+                return;
+            }
+
+
             textBox8.Text = null;
             private_data();
 
@@ -208,14 +226,14 @@ namespace WindowsFormsApplication5
 
         public void private_data()
         {
-            //D.FIO = textBox1.Text.ToString();
-            //D.sex = comboBox1.SelectedItem.ToString();
-            //D.age = textBox2.Text.ToString();
-            //D.experience = textBox3.Text.ToString();
-            //D.company = textBox4.Text.ToString();
-            //D.department = textBox5.Text.ToString();
-            //D.profession = textBox6.Text.ToString();
-            //D.factors = textBox7.Text.ToString();
+            D.FIO = textBox1.Text.ToString();
+            D.sex = comboBox1.SelectedItem.ToString();
+            D.age = textBox2.Text.ToString();
+            D.experience = textBox3.Text.ToString();
+            D.company = textBox4.Text.ToString();
+            D.department = textBox5.Text.ToString();
+            D.profession = textBox6.Text.ToString();
+            D.factors = textBox7.Text.ToString();
         }
 
     }

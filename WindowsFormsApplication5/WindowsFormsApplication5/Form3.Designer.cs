@@ -69,7 +69,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(385, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 23);
+            this.label2.Size = new System.Drawing.Size(296, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Тест №2. БРОНХОДИЛАТАЦИОННЫЙ ТЕСТ";
             // 
@@ -136,7 +136,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(211, 33);
             this.label9.TabIndex = 1;
-            this.label9.Text = "результаты спирометрических тестов в норме (ОФВ1 ≥ 80%)";
+            this.label9.Text = "Результаты спирометрических тестов в норме (ОФВ1 ≥ 80%) ?";
             // 
             // comboBox1
             // 
@@ -168,7 +168,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(213, 33);
             this.label10.TabIndex = 4;
-            this.label10.Text = "Бронходилатационный тест положительный";
+            this.label10.Text = "Бронходилатационный тест положительный?";
             // 
             // label11
             // 
@@ -176,7 +176,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(211, 44);
             this.label11.TabIndex = 5;
-            this.label11.Text = "коэффициент разброса показателей ПСВ достигает достоверных значений (PC>20%)";
+            this.label11.Text = "Коэффициент разброса показателей ПСВ достигает достоверных значений (PC>20%) ?";
             // 
             // label12
             // 
@@ -184,7 +184,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(213, 44);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Метахолиновый тест положительный";
+            this.label12.Text = "Метахолиновый тест положительный?";
             // 
             // label13
             // 
@@ -192,7 +192,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(211, 50);
             this.label13.TabIndex = 7;
-            this.label13.Text = "специфический бронхопровокационный тест положительный";
+            this.label13.Text = "Специфический бронхопровокационный тест положительный?";
             // 
             // label14
             // 
@@ -200,7 +200,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(213, 50);
             this.label14.TabIndex = 8;
-            this.label14.Text = "Кожный прик-тест с производственным АГ положительный";
+            this.label14.Text = "Кожный прик-тест с производственным АГ положительный?";
             // 
             // label15
             // 
@@ -208,7 +208,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(211, 37);
             this.label15.TabIndex = 9;
-            this.label15.Text = "Наличие специфических антител к профессиональным аллергенам";
+            this.label15.Text = "Наличие специфических антител к профессиональным аллергенам?";
             // 
             // label16
             // 
@@ -217,7 +217,7 @@
             this.label16.Size = new System.Drawing.Size(213, 52);
             this.label16.TabIndex = 10;
             this.label16.Text = "Падение ОФВ1 от базового значения и/или вариабельность показателей ПСВ 20% и боле" +
-    "е";
+    "е?";
             // 
             // comboBox3
             // 
